@@ -1,4 +1,8 @@
-Checkout project git clone https://github.com/shapovalovei/trueautomation-testng.git
+Checkout project 
+ 
+```bash 
+git clone https://github.com/shapovalovei/trueautomation-testng.git
+```
 
 Install TrueAutomation Client
 https://trueautomation.io/docs/#/install-client
