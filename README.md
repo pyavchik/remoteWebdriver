@@ -1,3 +1,9 @@
+Install TrueAutomation Client     
+    https://trueautomation.io/docs/#/install-client 
+
+
+Run command to initialize your project
+    trueautomation init
 
 TO LAUNCH chromedriver
     environment/chromedriver
