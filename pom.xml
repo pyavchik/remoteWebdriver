@@ -16,6 +16,111 @@
       </plugin>
     </plugins>
   </build>
+
+   <profiles>
+   <!-- default profile -->
+     <profile>
+       <id>gecko</id>
+       <activation>
+         <activeByDefault>true</activeByDefault>
+       </activation>
+       <build>
+         <plugins>
+           <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-surefire-plugin</artifactId>
+             <version>2.18.1</version>
+             <configuration>
+               <suiteXmlFiles>
+                 <suiteXmlFile>src/test/resources/gecko.xml</suiteXmlFile>
+               </suiteXmlFiles>
+             </configuration>
+           </plugin>
+         </plugins>
+       </build>
+     </profile>
+     <profile>
+       <id>chrome</id>
+       <activation>
+         <activeByDefault>false</activeByDefault>
+       </activation>
+       <build>
+         <plugins>
+           <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-surefire-plugin</artifactId>
+             <version>2.18.1</version>
+             <configuration>
+               <suiteXmlFiles>
+                 <suiteXmlFile>src/test/resources/chrome.xml</suiteXmlFile>
+               </suiteXmlFiles>
+             </configuration>
+           </plugin>
+         </plugins>
+       </build>
+     </profile>
+     <profile>
+       <id>ios</id>
+       <activation>
+         <activeByDefault>false</activeByDefault>
+       </activation>
+       <build>
+         <plugins>
+           <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-surefire-plugin</artifactId>
+             <version>2.18.1</version>
+             <configuration>
+               <suiteXmlFiles>
+                 <suiteXmlFile>src/test/resources/iOsAppium.xml</suiteXmlFile>
+               </suiteXmlFiles>
+             </configuration>
+           </plugin>
+         </plugins>
+       </build>
+     </profile>
+     <profile>
+       <id>android</id>
+       <activation>
+         <activeByDefault>false</activeByDefault>
+       </activation>
+       <build>
+         <plugins>
+           <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-surefire-plugin</artifactId>
+             <version>2.18.1</version>
+             <configuration>
+               <suiteXmlFiles>
+                 <suiteXmlFile>src/test/resources/androidAppium.xml</suiteXmlFile>
+               </suiteXmlFiles>
+             </configuration>
+           </plugin>
+         </plugins>
+       </build>
+     </profile>
+     <profile>
+       <id>safari</id>
+       <activation>
+         <activeByDefault>false</activeByDefault>
+       </activation>
+       <build>
+         <plugins>
+           <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-surefire-plugin</artifactId>
+             <version>2.18.1</version>
+             <configuration>
+               <suiteXmlFiles>
+                 <suiteXmlFile>src/test/resources/safari.xml</suiteXmlFile>
+               </suiteXmlFiles>
+             </configuration>
+           </plugin>
+         </plugins>
+       </build>
+     </profile>
+  </profiles>
+
   <repositories>
     <repository>
       <id>trueautomation-io</id>
@@ -38,7 +143,7 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>6.10</version>
-      <scope>exampleChromedriverTest</scope>
+      <scope>ChromeTest</scope>
     </dependency>
     <dependency>
       <groupId>io.appium</groupId>
