@@ -1,7 +1,7 @@
 Checkout project 
  
 ```bash 
-git clone https://github.com/shapovalovei/trueautomation-testng.git
+git clone https://github.com/pyavchik/remoteWebdriver.git
 ```
 
 Install TrueAutomation Client
