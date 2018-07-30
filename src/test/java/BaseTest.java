@@ -48,7 +48,8 @@ public class BaseTest {
             cap = new DesiredCapabilities();
             cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
             cap.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
-            cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
+            cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus_5X_API_28");
+            cap.setCapability(MobileCapabilityType.UDID, "53f4c898");
             driver = new TrueAutomationDriver(new URL("http://localhost:4723/wd/hub"), cap);
         } else {
             throw new WebDriverException("Unknown webdriver: " + webdriver);
