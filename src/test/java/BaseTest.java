@@ -15,9 +15,9 @@ import static io.trueautomation.client.TrueAutomationHelper.ta;
 public class BaseTest {
     TrueAutomationDriver driver;
 
-    private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
-    private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
-    private By emailFl = By.name(ta("ta:loginPage:email", "email"));
+    public By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
+    public By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
+    public By emailFl = By.name(ta("ta:loginPage:email", "email"));
 
     @Parameters({"webdriver"})
     @BeforeClass
