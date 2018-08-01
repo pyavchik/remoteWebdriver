@@ -13,7 +13,7 @@ At first, clone the project and initialize it from the project's root folder:
 ```bash 
 git clone https://github.com/pyavchik/remoteWebdriver.git
 ```
-Go to the project's root folder and run command: 'trueautomation init', follow the instructions.
+Go to the project's root folder and run command: ```trueautomation init```, follow the instructions.
 
 ## Run tests instruction
 
