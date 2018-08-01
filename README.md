@@ -1,4 +1,4 @@
-* RemoteWebDriver using, the example project
+# RemoteWebDriver using, the example project
 
 **Description** You are viewing the README for using the RemoteWebDriver with TrueAutomation.
 This is the detailed instructions how to run tests, using different WebDrivers within the example project.
